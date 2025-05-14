@@ -2,26 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 700;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+h2 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.025em;
+  font-weight: 100;
+  padding: 12px 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 9px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #0f0f0f;
+}
+
+/* STYLES FOR MOBILE */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 700;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  h2 {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 600;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 600;
   }
 }
