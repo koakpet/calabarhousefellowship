@@ -9,7 +9,7 @@ export default function Footer() {
         <Link href="/about" className="hover:text-black">
           WHO WE ARE
         </Link>
-        <Link href="/testimonies" className="hover:text-black">
+        <Link href="/testimonies" className="hover:text-black hidden md:block">
           TESTIMONIES
         </Link>
         <Link href="/contact" className="hover:text-black">
@@ -22,11 +22,11 @@ export default function Footer() {
       <div className="flex flex-col items-center gap-6 py-12 ">
         <Image
           src="/images/logo.png"
-          width="150"
-          height="150"
+          width="120"
+          height="120"
           alt="Logo"
         ></Image>
-        <h1 className="text-2xl md:text-4xl font-thin text-center">
+        <h1 className="text-xl md:text-4xl font-thin text-center">
           TODAY, IF YOU HEAR HIS VOICE, DO NOT HARDEN YOUR HEART
         </h1>
       </div>

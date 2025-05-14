@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div className="p-10 md:p-20 text-center">
-        <h1 className="py-8 md:px-20 md:py-16">
+        <h1 className="pb-8 pt-32 md:px-20 md:py-16">
           To day if ye will hear his voice, harden not your hearts, as in the
           provocation.
         </h1>
